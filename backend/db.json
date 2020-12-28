@@ -1,0 +1,66 @@
+{
+  "clientes": [
+    {
+      "nome": "Fulano",
+      "endereco": {
+        "logradouro": "Rua Teste",
+        "numero": "100",
+        "cidade": "Igaraçu do Tietê",
+        "estado": "SP"
+      },
+      "telefone": "(14) 3652-1830",
+      "pessoa_contato": "Próprio Fulano",
+      "pessoa": "Jurídica",
+      "preferencial": true,
+      "id": 1
+    },
+    {
+      "nome": "Beltrano",
+      "endereco": {
+        "logradouro": "Rua Teste",
+        "numero": "200",
+        "cidade": "Igaraçu do Tietê",
+        "estado": "SP"
+      },
+      "telefone": "(14) 3652-2525",
+      "pessoa_contato": "Beltrano",
+      "pessoa": "Física",
+      "preferencial": false,
+      "id": 2
+    },
+    {
+      "nome": "Ciclano",
+      "endereco": {
+        "logradouro": "Rua Teste",
+        "numero": "300",
+        "cidade": "Igaraçu do Tietê",
+        "estado": "SP"
+      },
+      "telefone": "(14) 3652-1830",
+      "pessoa_contato": "Ciclano",
+      "pessoa": "Jurídica",
+      "preferencial": false,
+      "id": 3
+    }
+  ],
+  "visitas": [
+    {
+      "cliente": "Fulano",
+      "data": "2020-12-28",
+      "hora": "15:35",
+      "motivo": "Teste",
+      "status": "Confirmada",
+      "resultado": "Resultado teste.",
+      "id": 1
+    },
+    {
+      "cliente": "Beltrano",
+      "data": "2021-02-20",
+      "hora": "16:45",
+      "motivo": "Possível Cliente",
+      "status": "Confirmada",
+      "resultado": "Pendente",
+      "id": 2
+    }
+  ]
+}

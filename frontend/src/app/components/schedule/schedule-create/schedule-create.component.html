@@ -1,0 +1,45 @@
+<mat-card>
+    <mat-card-title>Nova Visita</mat-card-title>
+    <form>
+        <mat-form-field>
+            <mat-select placeholder="Selecione o cliente" [(ngModel)]="schedule.cliente" name="cliente">
+                <mat-option *ngFor="let client of clients" [value]="client.nome">
+                    {{client.nome}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <!-- <mat-form-field appearance="fill">
+            <mat-label>Selecione a data</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="schedule.data" name="data">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field> -->
+        <mat-form-field>
+            <input type="date" matInput placeholder="Data" [(ngModel)]="schedule.data" name="data">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="time" matInput placeholder="Hora" [(ngModel)]="schedule.hora" name="hora">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Motivo" [(ngModel)]="schedule.motivo" name="motivo">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label> Status da visita </mat-label>
+            <mat-select [(ngModel)]="schedule.status" name="status">
+                <mat-option value="Cadastrada">Cadastrada</mat-option>
+                <mat-option value="Confirmada">Confirmada</mat-option>
+                <mat-option value="Em atendimento">Em atendimento</mat-option>
+                <mat-option value="Realizada">Realizada</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Resultado da visita" [(ngModel)]="schedule.resultado" name="resultado">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createSchedule()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancelSchedule()" color="worn">
+        Cancelar
+    </button>
+</mat-card>

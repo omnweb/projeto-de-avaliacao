@@ -1,0 +1,28 @@
+/* .sidenav {
+    background-color: #fff;
+    width: 200px;
+    margin-top: 16px;
+}
+
+.sidenav a {
+    color: #606060;
+}
+.sidenav i {
+    padding-right: 10px;
+}
+
+.content {
+    padding:16px;
+    background-color: #f9f9f9;
+} */
+
+mat-sidenav-container, mat-sidenav-content, mad-sidenav {
+    height: 100%;
+}
+
+mat-sidenav {
+    width:250px;
+}
+main {
+    padding:10px;
+}

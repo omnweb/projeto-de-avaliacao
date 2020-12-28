@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="header mat-elevation-z4">
+    <div fxHide.gt-xs>
+        <button mat-icon-button (click)="onToggleSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <a routerLink="{{routeUrl}}">
+            <img class="logo" src="assets/img/logo.png" alt="Logotipo do projeto" />
+        </a>
+    </div>
+    <div>
+        <a>
+            <i class="material-icons">
+                {{icon}}
+            </i>
+            {{title}}
+        </a>
+    </div>
+
+</mat-toolbar>

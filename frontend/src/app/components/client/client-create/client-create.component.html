@@ -1,0 +1,51 @@
+<mat-card>
+    <mat-card-title>Novo Cliente</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="client.nome" name="nome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Rua/Av:" [(ngModel)]="client.endereco.logradouro" name="logradouro">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="nº" [(ngModel)]="client.endereco.numero" name="numero">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Cidade" [(ngModel)]="client.endereco.cidade" name="cidade">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Estado" [(ngModel)]="client.endereco.estado" name="estado">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Responsável" [(ngModel)]="client.pessoa_contato" name="pessoa_contato">
+        </mat-form-field>
+        <mat-grid-list cols="2" rowHeight="100px">
+            <mat-grid-tile>
+                <mat-radio-group name="pessoa" aria-labelledby="tipo-pessoa" [(ngModel)]="client.pessoa">
+                    <label id="tipo-pessoa">Escolha o tipo de pessoa</label>
+                    <mat-radio-button class="radio-button" value="Física"> Pessoa Física </mat-radio-button>
+                    <mat-radio-button class="radio-button" value="Jurídica"> Pessoa Jurídica </mat-radio-button>
+                </mat-radio-group>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-radio-group name="preferencial" aria-labelledby="preferencial" [(ngModel)]="client.preferencial">
+                    <label id="preferencial">É preferencial?</label>
+                    <mat-radio-button class="radio-button" [value]="true"> Sim </mat-radio-button>
+                    <mat-radio-button class="radio-button" [value]="false"> Não </mat-radio-button>
+                </mat-radio-group>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </form>
+    <button mat-raised-button (click)="createClient()" color="primary">
+        Salvar
+    </button>
+    <button mat-raised-button (click)="cancelClient()">
+        Cancelar
+    </button>
+</mat-card>
