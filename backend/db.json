@@ -61,6 +61,15 @@
       "status": "Confirmada",
       "resultado": "Pendente",
       "id": 2
+    },
+    {
+      "cliente": null,
+      "data": "2020-10-10",
+      "hora": "10:15",
+      "motivo": "Dor de Cabeça",
+      "status": "Cadastrada",
+      "resultado": "Pendente",
+      "id": 3
     }
   ]
 }

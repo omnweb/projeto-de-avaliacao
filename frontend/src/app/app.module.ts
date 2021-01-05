@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TextMaskModule } from 'angular2-text-mask';
 
 
 import { AppComponent } from './app.component';
@@ -42,6 +43,8 @@ import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core'
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+
 
 @NgModule({
   declarations: [
@@ -84,6 +87,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule,
+    TextMaskModule
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },],
   bootstrap: [AppComponent]

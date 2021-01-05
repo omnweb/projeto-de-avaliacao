@@ -1,3 +1,9 @@
-table {
+.container {
     width: 100%;
+    overflow: auto;
+}
+  
+  table {
+    width: 100%;
+    min-width: 800px;
 }

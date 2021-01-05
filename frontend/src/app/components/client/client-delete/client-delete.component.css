@@ -6,7 +6,7 @@ form {
 }
 
 button {
-    margin: 20px 15px 0px 0px;
+    margin: 20px 15px 100px 0px;
 }
 
 
@@ -27,10 +27,4 @@ label{
 mat-radio-button {
     display: block;
     
-}
-
-@media (max-width:600px) {
-    form {
-        width: 500px;
-    }
 }

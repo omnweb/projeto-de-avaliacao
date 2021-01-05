@@ -20,7 +20,8 @@
             <input matInput placeholder="Estado" [(ngModel)]="client.endereco.estado" name="estado">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Telefone" [(ngModel)]="client.telefone" name="telefone">
+            <input matInput [textMask]="{mask: phoneMask}" placeholder="Telefone" [(ngModel)]="client.telefone"
+                name="telefone">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Responsável" [(ngModel)]="client.pessoa_contato" name="pessoa_contato">

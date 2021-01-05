@@ -1,6 +1,14 @@
-table {
+
+.container {
     width: 100%;
+    overflow: auto;
 }
+  
+  table {
+    width: 100%;
+    min-width: 800px;
+}
+
 .edit{
     margin-right: 5px;
 }
@@ -11,3 +19,5 @@ table {
 .delete > i {
     color:#e35e6b;
 }
+  
+  

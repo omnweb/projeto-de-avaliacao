@@ -10,6 +10,8 @@ import { Client } from '../client.model';
 })
 export class ClientCreateComponent implements OnInit {
 
+  phoneMask = ['(', /[1-9]/, /\d/, ')', ' ', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/]
+
   client: Client = {
     nome: "",
     endereco: {
